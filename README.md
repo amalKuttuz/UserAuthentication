@@ -1,16 +1,11 @@
-# UserAuthentication
+## UserAuthentication
 
-This is a Django sample project.
-3Consists of
-*Home page
-*Signin page
-*Signup page
-*User dashoard
+This is a Django sample project,Which shows basic user authentication in django
 
-#Requirements
-    Python
-    Django
-    Any IDE (optional)
+## Requirements
+Python
+Django
+Any IDE (optional)
  
 
 ## Installation
