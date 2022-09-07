@@ -1,0 +1,34 @@
+{% extends 'theme.html' %}
+
+{% block content %}
+
+
+<form action="signin" method='POST'>   
+    {% csrf_token %}             
+<div class="form-group">
+  <label for="">Username</label>
+  <input type="text" class="form-control" name="username" id="username" aria-describedby="helpId" placeholder="Enter your username">
+  <label for="">Password</label>
+  <input type="password" class="form-control" name="password" id="password" aria-describedby="helpId" placeholder="Enter your password">
+  <small id="helpId" class="form-text text-muted">If you dont have any account,then <a href="/signup" > click here signup </a> </small>
+  <button type="submit" class="btn btn-primary">Signin</button>
+</div>  
+  
+      {% if user.is_authenticated %}
+      {%if messages %}
+        {% for messages in messages%}
+        {{messages}}
+        {% endfor%}
+
+      {%endif%}
+
+
+      {%endif%}
+ 
+  
+
+</form>      
+<br>
+<br>
+
+{% endblock  %}
