@@ -3,15 +3,13 @@
 
 <br> <center>
 {% if user.is_authenticated %}
-      {%if messages %}
+      {% comment %} {%if messages %} {% endcomment %}
         {% for messages in messages%}
         {{messages}}
         {% endfor%}
 
-      {%endif%}
 
-
-      {%endif%}
+{%endif%}
 </center>
 <br>
 <div class=group>

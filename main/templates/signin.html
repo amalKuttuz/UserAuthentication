@@ -14,16 +14,15 @@
   <button type="submit" class="btn btn-primary">Signin</button>
 </div>  
   
-      {% if user.is_authenticated %}
-      {%if messages %}
-        {% for messages in messages%}
-        {{messages}}
-        {% endfor%}
+        {%if messages %}
+            {% for messages in messages%}
+               <div class="invalid" > {{messages}}
+            {% endfor%}
+                </div>
+        {%endif%}
+        
 
-      {%endif%}
 
-
-      {%endif%}
  
   
 

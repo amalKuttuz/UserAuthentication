@@ -18,8 +18,20 @@
 
       <small id="helpId" class="form-text text-muted">If you already have a account,then <a href="/signin" > click to signin </a> </small>
       <button type="submit" class="btn btn-primary">signup</button>
-    </div>            
-    </form>       
+    
+          {%if messages %}
+            {% for messages in messages%}
+              <div class="sucesss" > {{messages}}
+            {% endfor%}
+            </div>
+          {%endif%}
 
+
+
+
+    </div>    
+
+    </form>  
+   
 
 {% endblock  %}
